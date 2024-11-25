@@ -1,0 +1,110 @@
+/* Start Button */
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center; /* Center items vertically */
+}
+
+.risultato{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.labels{
+    font-family: 'YourFont';
+    color: #ffffff;
+    font-size: 5rem;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.scorecat{
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    width: 50vw; /* Button width matches the input fields */
+    height: 7vh; /* Button height scales with the viewport height */
+    font-size: 7.5vh;
+    color: #1f1147;
+    background: #ffcc00;
+    border: none;
+    border-radius: 1.04vh;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'YourFont';
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Start Button */
+.classifica-button {
+    width: 70vw; /* Button width matches the input fields */
+    height: 8vh; /* Button height scales with the viewport height */
+    font-size: 5rem;
+    color: #1f1147;
+    background: #ffcc00;
+    border: none;
+    border-radius: 1.04vh;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'YourFont';
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 2vh;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.circle{
+    background: #ffffff;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin-bottom: -10vw;
+    z-index: 10;
+    border: 0.16vh solid #ffffff;
+    overflow: hidden;
+}
+
+.circle img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.rectangle {
+    width: 70vw;
+    height: auto; /* Adjust height based on content */
+    display: flex;
+    flex-direction: column; /* Stack circle and text vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background: #1f1147;
+    border: 0.16vh solid #ffffff;
+    border-radius: 1.04vh;
+    z-index: 0;
+    padding: 2vh; /* Add padding to create spacing inside */
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    gap: 2vh; /* Space between children */
+    padding-top: 6vh;
+    margin-bottom: 3vh;
+}
+
+.description1 {
+    width: 100%; /* Ensure it spans the rectangle */
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'YourFont';
+    color: #ffffff;
+    margin: 0; /* Remove extra margin */
+}

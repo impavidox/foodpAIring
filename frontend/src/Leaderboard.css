@@ -1,0 +1,253 @@
+/* General Reset */
+body {
+  width: 100vw;
+
+  margin: 0;
+  font-family: 'YourFont';
+  background-color: #1a0026;
+  color: #ffffff;
+  display: flex; /* Ensure children can be aligned */
+  justify-content: center; /* Center the leaderboard horizontally */
+  align-items: center; /* Center the leaderboard vertically */
+  box-sizing: border-box;
+}
+
+
+/* Leaderboard Container */
+.leaderboard {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center all children horizontally */
+  width: 100%; /* Full width of the viewport */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Leaderboard List */
+.leaderboard-list {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center leaderboard items horizontally */
+  text-align: center;
+  padding-top: 4.38vh;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none; /* Remove bullet points */
+  padding-inline-start:0;
+					  
+}
+
+/* Leaderboard Title */
+.leaderboard-title {
+  display: block;
+  width: 100%;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+				  
+  text-transform: uppercase;
+  text-align: center; /* Center the title */
+  margin-bottom: 1.93vh;
+  box-sizing: border-box;
+						 
+}
+
+/* Buttons */
+.leaderboard-button {
+  width: 71.3vw;
+  height: 8vh;
+  font-size: 6rem;
+  color: #1f1147;
+  background: #ffcc00;
+  border: none;
+  border-radius: 1.04vh;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'YourFont';
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  margin-bottom: 5vh;
+  padding-top: 0.5vh;
+  text-align: center;
+}
+
+/* Circular Restart Button */
+.leaderboard-restart {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%; /* Ensure circular shape */
+  background-color: #ffcc00;
+  border: none; /* Remove any border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Regular shadow */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden; /* Keep content within the circular shape */
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  box-sizing: border-box;
+}
+
+.leaderboard-restart img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 50%; /* Make image circular */
+  overflow: hidden
+}
+
+.leaderboard-restart:active {
+  background-color: #d4a500; /* Darker color on click */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5); /* Inner shadow */
+  transform: scale(0.95); /* Pressed effect */
+  overflow: hidden
+}
+
+.leaderboard-home {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%; /* Ensure circular shape */
+  background-color: #ffcc00;
+  border: none; /* Remove any border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Regular shadow */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden; /* Keep content within the circular shape */
+  margin: 0 auto;
+  margin-top: 5vh;
+  box-sizing: border-box;
+}
+
+.leaderboard-home img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%; /* Make image circular */
+  overflow: hidden
+}
+
+.leaderboard-home:active {
+  background-color: #d4a500; /* Darker color on click */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5); /* Inner shadow */
+  transform: scale(0.95); /* Pressed effect */
+  overflow: hidden
+}
+
+
+
+/* Leaderboard Item */
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between; /* Space name and score evenly */
+  align-items: center;
+	width: 71.3vw;
+  height: 6.61vh;
+  background: #1F0F4E;
+  border: 0.16vh solid #ffffff;
+  border-radius: 1.04vh;
+  font-size: 7rem;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 1.09vh;
+  padding: 0 2vh; /* Padding left and right */
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'YourFont';
+  text-shadow: 1px 1px 2px #000;
+  text-align: center; /* Center text within the item */
+  box-sizing: border-box;
+  
+}
+
+.leaderboard-item .name {
+  padding-top: 1vh;
+  flex: 1; /* Take available space */
+  align-items: center;
+  text-align: left; /* Align the name text to the left */
+  vertical-align: middle;
+  display: flex;
+}
+
+.leaderboard-item .score {
+  padding-top: 1vh;
+  flex: 0 0 auto; /* Prevents flex stretching */
+  align-items: center; /* Centers items within the flex container */
+  text-align: right; /* Align the score text to the right */
+  justify-content: flex-end; /* Aligns score content within available space */
+  display: flex; /* Enables flexbox for proper alignment */
+}
+
+.leaderboard-item .ranking{
+  padding-top: 1vh;
+  align-items: center;
+  width: 5vh; /* Make it proportional to the height of the leaderboard item */
+  height: 5vh;
+  border-radius: 50%; /* Circular shape */
+  background-color: #ffcc00; /* Yellow background */
+  border: 0.16vh solid #ffffff; /* White border for consistency */
+  display: flex;
+  justify-content: center; /* Center text/content horizontally */
+  align-items: center; /* Center text/content vertically */
+  font-size: 4rem; /* Font size for the ranking number */
+  font-weight: bold;
+  color: #1f1147; /* Darker text color for visibility */
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  margin-right: 2vh; /* Space between ranking and name */
+  line-height: normal;
+  box-sizing: border-box;
+}
+
+#yourscore.leaderboard-item{
+  width: 75.3vw;
+  height: 9.61vh;
+  margin-top: 5vw;
+  font-size: 7rem;
+  box-sizing: border-box;
+  background-color: #4e4499;
+}
+
+
+.Buttons{
+  display: flex;
+  flex-direction: row;
+  gap:5vw;
+}
+
+
+.leaderboard-home2 {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%; /* Ensure circular shape */
+  background-color: #ffcc00;
+  border: none; /* Remove any border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Regular shadow */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden; /* Keep content within the circular shape */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.leaderboard-home2 img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%; /* Make image circular */
+  overflow: hidden
+}
+
+.leaderboard-home2:active {
+  background-color: #d4a500; /* Darker color on click */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5); /* Inner shadow */
+  transform: scale(0.95); /* Pressed effect */
+  overflow: hidden
+}

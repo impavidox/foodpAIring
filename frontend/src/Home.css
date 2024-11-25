@@ -1,0 +1,52 @@
+/* Start Button */
+.gioca-button {
+    width: 70vw; /* Button width matches the input fields */
+    height: 8vh; /* Button height scales with the viewport height */
+    font-size: 5rem;
+    color: #1f1147;
+    background: #ffcc00;
+    border: none;
+    border-radius: 1.04vh;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'YourFont';
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 4.9vh;
+}
+
+/* Start Button */
+.classifica-button {
+    width: 70vw; /* Button width matches the input fields */
+    height: 8vh; /* Button height scales with the viewport height */
+    font-size: 5rem;
+    color: #1f1147;
+    background: #ffcc00;
+    border: none;
+    border-radius: 1.04vh;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'YourFont';
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 2vh;
+}
+
+
+.img_robot{
+    width: 74.35vw;
+    height: auto;
+    
+}
+
+
+.description{
+    width: 72.04vw;
+    height: 7.5vh;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'YourFont';
+    color: #ffffff;
+    padding-top: 4.74vh;
+    margin-bottom: 8vh;
+}

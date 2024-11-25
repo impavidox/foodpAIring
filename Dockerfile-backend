@@ -1,0 +1,20 @@
+# Use a smaller Node.js base image
+FROM node:18-alpine AS base
+
+# Set the working directory
+WORKDIR /usr/src/app
+
+# Copy package.json and package-lock.json and install dependencies
+COPY backend/package*.json ./
+
+# Install only production dependencies
+RUN npm install --production
+
+# Copy the application code
+COPY backend/ .
+
+# Expose the backend port
+EXPOSE 5000
+
+# Start the backend server
+CMD ["node", "server.js"]

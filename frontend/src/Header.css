@@ -1,0 +1,34 @@
+/* Ensure the header takes up the full canvas width */
+.home-header {
+    width: 100vw; /* 100% of the viewport width */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+    justify-content: center; /* Center the content vertically */
+    padding-top: 8.7vw; /* Optional padding for spacing */
+  }
+  
+  /* ITS Academy Logo */
+  /* Image styles */
+  .logo_ITS {
+    width: 32.69vw; /* 30% of the viewport width */
+    height: auto; /* Maintain the aspect ratio */
+    padding-bottom: 8.43vw;
+  }
+  
+  
+  /* Robot Image */
+  .logo_robot {
+    width: 25.28vw; /* 15% of the viewport width */
+    height: auto; /* Maintain the aspect ratio */
+    position: absolute;
+    right: 4vw; /* Align to the right */
+    top: 9.17vw;
+  }
+  
+  /* Food pAIring Logo */
+  .logo_pAIring {
+    width: 76.76vw; /* 50% of the viewport width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  

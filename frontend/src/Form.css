@@ -1,0 +1,147 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'YourFont';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height coverage */
+    background-image: url('back.png'); /* Add your background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    box-sizing: border-box;
+}
+
+/* Container */
+.form-container {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%; /* Use padding relative to the viewport */
+    box-sizing: border-box;
+}
+
+/* Form */
+.form-form {
+    width: 100%; /* Form width is 80% of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7.19vh;
+    gap: 2.08vh;
+/* Space between elements relative to form size */
+}
+
+/* Input Fields */
+.input-field {
+    width: 70vw; /* Input fields take 70% of the form width */
+    height: 7vh; /* Height is 7% of the viewport height */
+    font-size: 5rem;
+    font-family: 'YourFont';
+    background: #1f1147;
+    border: 0.16vh solid #ffffff;
+    text-align: left;
+    padding-left: 3.7vw;
+    border-radius: 1.04vh;
+    color: white;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+
+.leaderboard-home {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%; /* Ensure circular shape */
+  background-color: #ffcc00;
+  border: none; /* Remove any border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Regular shadow */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden; /* Keep content within the circular shape */
+  margin: 0 auto;
+  margin-top: 5vh;
+  box-sizing: border-box;
+}
+
+.input-field::placeholder {
+    color: #ffffff;
+
+}
+
+
+.start-button:disabled {
+  background-color: #c5ab43;;
+  cursor: not-allowed;
+}
+
+
+
+/* Privacy Container */
+.privacy-container {
+    display: flex;
+    align-items: center; /* Align checkbox and label vertically */
+    gap: 2.5vw; /* Space between the checkbox and the label */
+    color: white; /* Text color */
+    padding-right: 11vw;
+    margin-top: 1vw; /* Add spacing above the privacy container */
+  }
+
+  /* Privacy Checkbox */
+  .privacy-container input[type="checkbox"] {
+    appearance: none; /* Remove default checkbox styling */
+    width: 3.89vw; /* Set width */
+    height: 1.98vh; /* Set height */
+    border: 0.16vh solid #ffffff; /* Add a border */
+    border-radius: 0.5vh; /* Optional rounded corners */
+    background-color: #1f1147; /* Transparent background */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative; /* Allow for custom checked styling */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  
+  .privacy-container input[type="checkbox"]:checked::after {
+    content: '✔'; /* Add a checkmark */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Checkmark color */
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Privacy Label */
+  .privacy-container label {
+    cursor: pointer; /* Make the label clickable */
+    font-size: 3rem; /* Adjust label font size */
+    line-height: 1.2; /* Align text with the checkbox */
+    color: #fff; /* Label text color */
+  }
+  
+
+/* Start Button */
+.start-button {
+    width: 70vw; /* Button width matches the input fields */
+    height: 8vh; /* Button height scales with the viewport height */
+    font-size: 5rem;
+    color: #1f1147;
+    background: #ffcc00;
+    border: none;
+    border-radius: 1.04vh;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'YourFont';
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,34 @@
+# Ignore node_modules to avoid copying unnecessary dependencies
+node_modules
+
+# Ignore npm debug logs
+npm-debug.log
+yarn-error.log
+
+# Ignore local environment files
+.env
+.env.local
+
+# Ignore Docker-related files
+.dockerignore
+docker-compose.yml
+
+# Ignore temporary files and directories
+*.swp
+*.log
+.DS_Store
+*.tmp
+*.bak
+
+# Ignore test-related files and directories
+test/
+tests/
+coverage/
+
+# Ignore Git-related files
+.git
+.gitignore
+
+# Ignore build artifacts
+build/
+dist/
