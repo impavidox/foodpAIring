@@ -1,9 +1,9 @@
 .timer-spritesheet {
-    width: 180px; /* Scaled width (4x larger than 32px) */
-    height: 180px; /* Scaled height (4x larger than 32px) */
+    width: 256px; /* Scaled width (4x larger than 32px) */
+    height: 256px; /* Scaled height (4x larger than 32px) */
     background-image: url("timer.png"); /* Replace with the correct path */
     background-repeat: no-repeat;
-    background-size: 1800px 180px; /* Scale up the entire spritesheet */
+    background-size: 2560px 256px; /* Scale up the entire spritesheet */
     position: absolute; /* Use absolute positioning for flexibility */
     top: 25vh; /* Adjust to place the timer vertically */
     left: 80vw; /* Center horizontally */

@@ -39,7 +39,7 @@ const Timer = ({ duration, onTimeout, resetTrigger, onTimeUpdate }) => {
     <div
       className="timer-spritesheet"
       style={{
-        backgroundPositionX: `-${Math.floor((duration * 1000 - remainingMs) / 1000) * 180}px`, // Update sprite frame every second
+        backgroundPositionX: `-${Math.floor((duration * 1000 - remainingMs) / 1000) * 256}px`, // Update sprite frame every second
       }}
     />
   );
