@@ -21,19 +21,19 @@ const Risultato = () => {
       return {
         title: 'Curioso del palato',
         description: 'Hai iniziato il tuo viaggio nel mondo del Foodpairing, ma serve più attenzione alle preferenze del pubblico.',
-        img:'francesco.gif'
+        img:'no.png'
       };
     } else if (score >= 25 && score <= 39) {
       return {
         title: 'Esploratore del gusto',
         description: 'Ottimo lavoro! Ti manca solo un pizzico di intuizione per diventare un maestro del gusto.',
-        img:'francesco2.gif'
+        img:'medio.png'
       };
     } else if (score >= 40) {
       return {
         title: 'Gusto Supremo',
         description: 'Sei un vero Maestro degli Abbinamenti! La tua capacità di intuire il gusto del pubblico è straordinaria.',
-        img:'francesco3.gif'
+        img:'buono.png'
       };
     } else {
       return {
