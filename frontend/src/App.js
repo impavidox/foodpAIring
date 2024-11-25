@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Game from './Game';
@@ -10,6 +10,26 @@ import useInactivityTimer from './useInactivityTimer'; // Path to the hook
 
 const App = () => {
   const [gameId, setGameId] = useState(null);
+
+  useEffect(() => {
+    const preventDefault = (e) => e.preventDefault();
+  
+    // Disable right-click menu and gestures like double-tap zoom
+    document.addEventListener('gesturestart', preventDefault);
+    document.addEventListener('gesturechange', preventDefault);
+    document.addEventListener('gestureend', preventDefault);
+  
+    // Disable touch actions globally
+    document.addEventListener('touchstart', preventDefault);
+  
+    return () => {
+      document.removeEventListener('gesturestart', preventDefault);
+      document.removeEventListener('gesturechange', preventDefault);
+      document.removeEventListener('gestureend', preventDefault);
+      document.removeEventListener('touchstart', preventDefault);
+    };
+  }, []);
+  
 
   useInactivityTimer(100000, '/saver'); 
   return (

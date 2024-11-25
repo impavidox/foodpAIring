@@ -58,8 +58,8 @@ const Form = () => {
 
   return (
     <div className="form-container">
-      {Tutorial && <img src='Tutorial.png' onClick={handleStartGame}></img>}
-      <Header showAigro={true} />
+      {Tutorial ? <img src='Tutorial.png' onClick={handleStartGame}></img>:
+      <><Header showAigro={true} />
       <div className="form-form">
         {['nome', 'nickname', 'email'].map((field) => (
           <input
@@ -98,7 +98,7 @@ const Form = () => {
         <button className="leaderboard-home" onClick={handleHomeGame}>
           <img src="home.png" alt="home" className="logo_home" />
         </button>
-      </div>
+      </div></>}
     </div>
   );
 };
